@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gravity Falls | Misterios del Bosque</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0e1a14;
+    color:#fff;
+}
+
+header{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+    url(imagen de fondo);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Cinzel',serif;
+    font-size:4rem;
+    color:#f5c542;
+    text-shadow:0 0 15px #000;
+}
+
+header p{
+    margin-top:20px;
+    font-size:1.2rem;
+    max-width:600px;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 30px;
+    background:#f5c542;
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#fff;
+    transform:scale(1.05);
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:#111;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav h2{
+    color:#f5c542;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#f5c542;
+}
+
+section{
+    padding:100px 50px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:2.5rem;
+    color:#f5c542;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#16241c;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{https://static.wikia.nocookie.net/gravityfalls/images/b/bc/T2e20_Estatua.png/revision/latest?cb=20160217220225&path-prefix=es/revision/latest?cb=20241213180022
+    width:100%;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Gravity Falls</h2>
+    <ul>
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="#misterios">Misterios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Bienvenidos a Gravity Falls</h1>
+    <p>Un pequeño pueblo lleno de criaturas extrañas, secretos ocultos y misterios sobrenaturales.</p>
+    <a href="#personajes" class="btn">Explorar</a>
+</header>
+
+<section id="personajes">
+    <h2 class="section-title">Personajes Principales</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/61/dd/08/61dd0881c0b7ca8d41589d230852c043.jpg">
+            <div class="card-content">
+                <h3>Dipper Pines</h3>
+                <p>Curioso e inteligente. Obsesionado con resolver los misterios del pueblo 
+(y con Wendy)</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/gravityfalls/images/3/32/LanzGarf.png/revision/latest?cb=20150727012316&path-prefix=es">
+            <div class="card-content">
+                <h3>Mabel Pines</h3>
+                <p>Optimista, divertida y amante de los suéteres coloridos. En lo personal, mi personaje favorito después de Soos. </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://preview.redd.it/why-do-you-thin-bill-cipher-works-so-well-and-is-such-a-v0-p1y5lolth7lc1.jpeg?auto=webp&s=6f8dfebe7ebf9db6a5c701f51f56ff085d04c344">
+            <div class="card-content">
+                <h3>Bill Cipher</h3>
+                <p>Entidad demoníaca interdimensional con planes caóticos que manipula a Stanford y a las personas del pueblo.</p>
+          </div>
+          </div>
+               <div class="card">
+            <img src="https://static.wikia.nocookie.net/gravityfalls/images/f/fd/Stan_imagen_articulo.png/revision/latest?cb=20180328165817&path-prefix=es">
+            <div class="card-content">
+                <h3>Stanley Pines</h3>
+                <p>Es el astuto, tramposo y carismático dueño de la Cabaña del Misterio. 
+Tío abuelo de Dipper y Mabel. Creo firmemente en que tiene crematomanía.
+              </p>
+        </div>
+        </div>
+      <div class="card">
+            <img src="https://static.wikia.nocookie.net/gravityfalls/images/e/e5/Stanford_Pines_imagen_art%C3%ADculo.jpg/revision/latest?cb=20151112214747&path-prefix=es">
+            <div class="card-content">
+                <h3>Stanford Pines</h3>
+                <p> Es el autor de los diarios, y además hermano de Stanley. Un genio científico de seis dedos que dedicó su vida a investigar los grandes misterios de Gravity Falls. </p>
+</div>
+         </div>
+      <div class="card">
+            <img src="https://preview.redd.it/a-lot-of-people-are-upset-that-wendys-character-backstory-v0-ip9sj265pblb1.jpg?auto=webp&s=056d51fe3dbe295285ec3a049cbe3e743b937c87">
+            <div class="card-content">
+                <h3>Wendy Corduroy</h3>
+                <p> Adolescente de 15 años, relajada y rebelde, que trabaja a tiempo parcial en la Cabaña del Misterio. Amor imposible de Dipper. </p>
+      
+  
+    </div> 
+  </div>
+      <div class="card">
+            <img src="https://pbs.twimg.com/media/DTWGJy2XkAAtln2.jpg">
+            <div class="card-content">
+                <h3>Giddeon Alegría</h3>
+                <p> 
+              Es el villano de la serie y archienemigo de Stanley. Tiene un crush raro con Mabel y la mayor parte de la serie buscó adueñarse de la Cabaña del Misterio.
+                  (No es pelado, de hecho tiene mejor pelo que yo, pero la imagen está buenísima).
+                  </p>
+      
+                  
+                </p>
+        </div>
+      </div>
+      <div class="card">
+            <img src="https://i.pinimg.com/736x/2b/57/17/2b5717e17a8516d181f22565d81dfaaa.jpg">
+            <div class="card-content">
+                <h3>Soos Rodriguez</h3>
+                <p> 
+              El mejor personaje de la serie.
+               Generoso, amable, servicial, buena persona y mejor amigo de Dipper y Mabel. Tiene el humor muy roto y su sueño es ser el hijo adoptivo de Stanley.
+                  </p>
+      </div>
+      </div>
+      <div class="card">
+            <img src="https://i.pinimg.com/1200x/cf/51/76/cf5176a665fd961886b44e283c526b99.jpg">
+            <div class="card-content">
+                <h3>Pato y Gompers</h3>
+                <p> 
+              La mejor pareja de Gravity Falls. 
+
+    <iframe width="275" height="180" src="https://www.youtube.com/embed/DPLpr1XVMmg?si=Xzr48BvMzJpRdo3z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+</div>
+
+</div>
+                  </p>
+      
+                  
+</section>
+
+<section id="misterios">
+    <h2 class="section-title">Misterios del Pueblo</h2>
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-content">
+                <h3>El Diario #3</h3>
+                <p>Libro lleno de criaturas y secretos ocultos sobre Gravity Falls.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>El Weirdmageddon</h3>
+                <p>Evento apocalíptico causado por Bill Cipher.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>La Cabaña del Misterio</h3>
+                <p>Centro turístico y base secreta llena de enigmas.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="galeria">
+    <h2 class="section-title">Galería</h2>
+    <div class="gallery">
+        <img src="https://i.pinimg.com/736x/b7/86/0b/b7860b648b9bce2afc947ec490aa0334.jpg"width="260" height="200" 
+             </div>
+        <img src="https://i.pinimg.com/736x/2c/32/1f/2c321faddcf623bd687af795426c6111.jpg"width="260" height="200" 
+             </div>
+        <img src="https://i.pinimg.com/736x/5b/44/65/5b44656a7268db233aa4ef5d6574aad3.jpg"width="260" height="200" 
+    
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Página creada por Keyth | Inspirado en Gravity Falls</p>
+</footer>
+
+</body>
+</html>
